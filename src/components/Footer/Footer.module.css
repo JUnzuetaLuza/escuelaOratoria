@@ -1,0 +1,41 @@
+
+.container {
+    width: 100vw;
+    height: 18vh;
+    background-color: #313131;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+.middleLeft, .middleRight {
+    width: 50%;
+    /* height: auto; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.middleRight {  
+    flex-direction: column;
+    justify-content: center; 
+}
+p {
+    margin: 0;
+}
+
+.socialMedia {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.smallLogo {
+    width: 2.5em;
+    height: 2.5em;
+}
