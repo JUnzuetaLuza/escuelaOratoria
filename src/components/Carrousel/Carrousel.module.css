@@ -1,0 +1,44 @@
+
+.container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+
+.carouselInner {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.carouselItem {
+    width: 100%;
+    flex: 1 0 100%;
+}
+
+.carouselItem img {
+    width: 100%;
+    display: block;
+}
+
+.carouselControl {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+}
+
+.carouselControl:first-of-type {
+    left: 10px;
+}
+
+.carouselControl:last-of-type {
+    right: 10px;
+}
