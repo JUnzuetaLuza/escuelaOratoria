@@ -4,13 +4,25 @@
     width: 100%;
     margin: auto;
     overflow: hidden;
-    border: 1px solid #ccc;
+}
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #000 url(../../assets/SobreMi.jpg) no-repeat fixed center;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
 }
 
 .carouselInner {
     display: flex;
     width: 100%;
     transition: transform 0.5s ease;
+    filter: blur(0);
 }
 
 .carouselItem {
@@ -19,8 +31,10 @@
 }
 
 .carouselItem img {
-    width: 100%;
+    height: 80vh;
+    width: 60%;
     display: block;
+    margin: 0 auto;
 }
 
 .carouselControl {

@@ -31,9 +31,9 @@ export const Carrousel = () => {
     const prevSlide = () => {
         showSlide(currentSlide - 1);
     }
-
+    
     return (
-        <div className={css.container}>
+        <div className={css.container} >
             <div className={css.carouselInner} style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
                 {slides.map((slide, index) => (
                     <div className={css.carouselItem} key={index}>
