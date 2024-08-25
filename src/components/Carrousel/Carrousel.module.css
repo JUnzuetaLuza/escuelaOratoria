@@ -5,18 +5,6 @@
     margin: auto;
     overflow: hidden;
 }
-.container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: #000 url(../../assets/SobreMi.jpg) no-repeat fixed center;
-    background-size: cover;
-    filter: blur(5px);
-    z-index: -1;
-}
 
 .carouselInner {
     display: flex;
@@ -52,7 +40,6 @@
 .carouselControl:first-of-type {
     left: 10px;
 }
-
 .carouselControl:last-of-type {
     right: 10px;
 }
