@@ -1,5 +1,5 @@
 import { NavBar } from '../../components/NavBar/NavBar'
-import { Carrousel } from '../../components/Carrousel/Carrousel'
+import { Carousel } from '../../components/Carousel/Carousel'
 import { Footer } from '../../components/Footer/Footer'
 
 export const Home = () => {
@@ -7,7 +7,7 @@ export const Home = () => {
   return (
     <>
       <NavBar/>
-      <Carrousel/>
+      <Carousel/>
       <Footer/>
     </>
   )

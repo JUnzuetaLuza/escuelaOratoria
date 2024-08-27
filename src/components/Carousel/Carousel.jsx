@@ -1,4 +1,4 @@
-import css from './Carrousel.module.css';
+import css from './Carousel.module.css';
 import React, { useState } from 'react';
 import SobreMi from "../../assets/SobreMi.jpg";
 import Curso from "../../assets/Curso.jpg";
@@ -6,7 +6,7 @@ import Contacto from "../../assets/Contacto.jpg";
 import Podcast from "../../assets/Podcast.jpg";
 import { dataInicio } from "../../data/InicioData"
 
-export const Carrousel = () => {
+export const Carousel = () => {
 
     const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -50,6 +50,7 @@ export const Carrousel = () => {
                         <div className={css.card}>
                             <h2 className={css.titleCard}>{slide.title}</h2>
                             <p className={css.contentCard}>{slide.description}</p>
+                            <button className={css.buttonCard}>Conoce más</button>
                         </div>
                     </div>
                 ))}
