@@ -47,7 +47,7 @@ export const Carousel = () => {
                 {dataInicio.map((slide, index) => (
                     <div className={css.carouselItem} key={index}>
                         <img src={slide.photo} alt={`Imagen ${index + 1}`} />
-                        <div className={css.card}>
+                        <div className={css.card} style={{left: `${(currentSlide % 2) * 25 + 25}%`}}>
                             <h2 className={css.titleCard}>{slide.title}</h2>
                             <p className={css.contentCard}>{slide.description}</p>
                             <button className={css.buttonCard}>Conoce más</button>
