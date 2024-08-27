@@ -4,22 +4,17 @@ import SobreMi from "../../assets/SobreMi.jpg";
 import Curso from "../../assets/Curso.jpg";
 import Contacto from "../../assets/Contacto.jpg";
 import Podcast from "../../assets/Podcast.jpg";
+import { dataInicio } from "../../data/InicioData"
 
 export const Carrousel = () => {
 
     const [currentSlide, setCurrentSlide] = useState(0);
-    const slides = [
-        SobreMi,
-        Curso,
-        Contacto,
-        Podcast
-    ]
 
     const showSlide = (index) => {
-        if(index >= slides.length){
+        if(index >= dataInicio.length){
             setCurrentSlide(0);
         } else if(index < 0){
-            setCurrentSlide(slides.length - 1);
+            setCurrentSlide(dataInicio.length - 1);
         } else {
             setCurrentSlide(index);
         }
@@ -33,7 +28,7 @@ export const Carrousel = () => {
     }
 
     const containerBackground = {
-        backgroundImage: `url(${slides[currentSlide]})`,
+        backgroundImage: `url(${dataInicio[currentSlide].photo})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         filter: 'blur(10px)',
@@ -49,9 +44,13 @@ export const Carrousel = () => {
         <div className={css.container} >
             <div style={containerBackground}></div>
             <div className={css.carouselInner} style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
-                {slides.map((slide, index) => (
+                {dataInicio.map((slide, index) => (
                     <div className={css.carouselItem} key={index}>
-                        <img src={slide} alt={`Imagen ${index + 1}`} />
+                        <img src={slide.photo} alt={`Imagen ${index + 1}`} />
+                        <div className={css.card}>
+                            <h2 className={css.titleCard}>{slide.title}</h2>
+                            <p className={css.contentCard}>{slide.description}</p>
+                        </div>
                     </div>
                 ))}
             </div>

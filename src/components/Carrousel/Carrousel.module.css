@@ -16,6 +16,10 @@
 .carouselItem {
     width: 100%;
     flex: 1 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .carouselItem img {
@@ -42,4 +46,12 @@
 }
 .carouselControl:last-of-type {
     right: 10px;
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    margin: auto 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
 }
