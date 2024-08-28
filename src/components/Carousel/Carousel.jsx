@@ -4,7 +4,8 @@ import SobreMi from "../../assets/SobreMi.jpg";
 import Curso from "../../assets/Curso.jpg";
 import Contacto from "../../assets/Contacto.jpg";
 import Podcast from "../../assets/Podcast.jpg";
-import { dataInicio } from "../../data/InicioData"
+import { dataInicio } from "../../data/InicioData";
+import { Link } from 'react-router-dom';
 
 export const Carousel = () => {
 
@@ -50,7 +51,7 @@ export const Carousel = () => {
                         <div className={css.card} style={{left: `${(currentSlide % 2) * 25 + 25}%`}}>
                             <h2 className={css.titleCard}>{slide.title}</h2>
                             <p className={css.contentCard}>{slide.description}</p>
-                            <button className={css.buttonCard}>Conoce más</button>
+                            <Link to={`/${slide.link}`}><button className={css.buttonCard}>Conoce más</button></Link>
                         </div>
                     </div>
                 ))}

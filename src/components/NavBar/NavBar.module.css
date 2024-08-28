@@ -12,16 +12,19 @@
     z-index: 1;
 }
 
-img {
+.logo {
     height: 10vh;
 }
-ul {
+.navButtons {
     display: flex;
     flex-direction: row;
     gap: 50px;
 }
-li {
+.navLink {
     all: unset;
     font-family: sans-serif;
     font-weight: 700;
+}
+a {
+    all: unset;
 }
