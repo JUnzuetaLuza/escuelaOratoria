@@ -1,0 +1,10 @@
+.firstModule {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 78vh;
+}
+
+.photo {
+    height: 100%;
+}
