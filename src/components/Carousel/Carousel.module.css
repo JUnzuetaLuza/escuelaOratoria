@@ -4,6 +4,7 @@
     width: 100%;
     margin: auto;
     overflow: hidden;
+    color: white;
 }
 
 .carouselInner {
@@ -70,4 +71,19 @@
 }
 .contentCard {
     padding: 0 1rem;
+}
+.buttonCard {
+    border-radius: 8px;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    color: white;
+    background-color: #1a1a1a;
+    border: 2px solid transparent;
+    transition: border-color 0.5s;
+}
+.buttonCard:hover {
+    color: #e26600;
+    border-color: #e26600;
 }
