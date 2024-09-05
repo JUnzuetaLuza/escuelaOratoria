@@ -2,9 +2,8 @@
 .container {
     position: relative;
     width: 100%;
-    margin: auto;
-    overflow: hidden;
     color: white;
+    margin-top: 2vh;
 }
 
 .carouselInner {
@@ -27,7 +26,6 @@
     height: 80vh;
     width: 60%;
     display: block;
-    margin: 0 auto;
 }
 
 .carouselControl {
