@@ -26,6 +26,7 @@ export const SobreMi = () => {
           <p className={css.sideText}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe quisquam ipsa nam reprehenderit ipsum eligendi iste deleniti ullam, reiciendis ea.</p>
           <img src={think} className={css.subPhoto} />
         </div>
+        <button className={css.btnCurso}>Curso</button>
       </section>
       <Footer/>
     </>
