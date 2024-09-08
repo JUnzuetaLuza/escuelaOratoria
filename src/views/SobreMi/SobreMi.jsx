@@ -4,6 +4,7 @@ import { Footer } from '../../components/Footer/Footer';
 import persona from '../../assets/persona.png';
 import inspiration from '../../assets/inspiration.png';
 import think from '../../assets/think.png';
+import { Link } from 'react-router-dom';
 
 export const SobreMi = () => {
 
@@ -26,7 +27,7 @@ export const SobreMi = () => {
           <p className={css.sideText}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe quisquam ipsa nam reprehenderit ipsum eligendi iste deleniti ullam, reiciendis ea.</p>
           <img src={think} className={css.subPhoto} />
         </div>
-        <button className={css.btnCurso}>Curso</button>
+        <Link to='/curso' className={css.btnCurso}>Curso</Link>
       </section>
       <Footer/>
     </>
