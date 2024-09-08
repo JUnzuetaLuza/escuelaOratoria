@@ -67,6 +67,7 @@
     background-color: #e26600;
     border: 2px solid transparent;
     transition: border-color 0.5s;
+    cursor: pointer;
 }
 .btnCurso:hover {
     color: #1a1a1a;
