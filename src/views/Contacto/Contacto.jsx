@@ -40,9 +40,8 @@ export const Contacto = () => {
       </section>
       <section className={css.firstModule}>
         <div className={css.firstRight}>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, reprehenderit pariatur cupiditate nemo mollitia similique dicta voluptatem rem officiis, error libero accusamus repellendus quis quaerat! Obcaecati, vitae? Quas obcaecati expedita amet dolore debitis rerum, asperiores labore harum blanditiis, alias cum. <br/><br/>Dignissimos, commodi error. Suscipit perspiciatis veritatis, reprehenderit rerum, iure eligendi ducimus consequatur iusto fugiat voluptates doloremque necessitatibus illum praesentium est?</p>
-          <br/>
-          <Link to='/contacto' className={css.btnContacto}>Contacto</Link>
+          <input/>
+          <textarea></textarea>
         </div>
         <img src={email} className={css.email} />
       </section>
