@@ -63,8 +63,8 @@ h6 {
     margin: 0;
 }
 
-.btnContacto {
-    align-self: center;
+.btnEnviar {
+    align-self: flex-end;
     border-radius: 8px;
     padding: 0.6em 1.2em;
     font-size: 1.5rem;
@@ -76,9 +76,20 @@ h6 {
     transition: border-color 0.5s;
     cursor: pointer;
 }
-.btnContacto:hover {
+.btnEnviar:hover {
     color: #1a1a1a;
     border-color: #1a1a1a;
+}
+
+
+input, textarea{
+    height: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+textarea {
+    height: 10rem;
+
 }
 
 @media (max-width: 1366px) {

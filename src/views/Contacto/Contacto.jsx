@@ -40,8 +40,12 @@ export const Contacto = () => {
       </section>
       <section className={css.firstModule}>
         <div className={css.firstRight}>
+          <h2 className={css.title}>Envíame un correo</h2>
+          <label>Ingrese su correo:</label>
           <input/>
+          <label>Ingrese su texto:</label>
           <textarea></textarea>
+          <button className={css.btnEnviar}>Enviar</button>
         </div>
         <img src={email} className={css.email} />
       </section>
