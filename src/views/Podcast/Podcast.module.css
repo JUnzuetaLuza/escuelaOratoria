@@ -1,6 +1,7 @@
-.firstModule {
+.firstModule, .secondModule {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     width: 100%;
     height: 80vh;
     color: white;
@@ -8,6 +9,11 @@
     padding: 0 5rem;
     box-sizing: border-box;
     margin: 10vh 0 0 0;
+}
+.secondModule {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 .photo {
     flex: 1 1 33%;
@@ -29,7 +35,12 @@
     box-sizing: border-box;
     margin: 0 2rem;
 }
-.btnContacto {
+
+iframe {
+    margin: 2rem 0;
+}
+
+.btnSeguir {
     align-self: center;
     border-radius: 8px;
     padding: 0.6em 1.2em;
@@ -41,8 +52,9 @@
     border: 2px solid transparent;
     transition: border-color 0.5s;
     cursor: pointer;
+    margin-bottom: 2rem;
 }
-.btnContacto:hover {
+.btnSeguir:hover {
     color: #1a1a1a;
     border-color: #1a1a1a;
 }
