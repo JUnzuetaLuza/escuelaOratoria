@@ -4,7 +4,7 @@ import SobreMi from "../../assets/SobreMi.jpg";
 import Curso from "../../assets/Curso.jpg";
 import Contacto from "../../assets/Contacto.jpg";
 import Podcast from "../../assets/Podcast.jpg";
-import { dataInicio } from "../../data/InicioData";
+import { dataInicio } from "../../others/InicioData";
 import { Link } from 'react-router-dom';
 
 export const Carousel = () => {
