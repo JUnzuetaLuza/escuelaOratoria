@@ -1,9 +1,5 @@
 import css from './Carousel.module.css';
-import React, { useState } from 'react';
-import SobreMi from "../../assets/SobreMi.jpg";
-import Curso from "../../assets/Curso.jpg";
-import Contacto from "../../assets/Contacto.jpg";
-import Podcast from "../../assets/Podcast.jpg";
+import React, { useState, useEffect } from 'react';
 import { dataInicio } from "../../others/InicioData";
 import { Link } from 'react-router-dom';
 
@@ -27,6 +23,14 @@ export const Carousel = () => {
     const prevSlide = () => {
         showSlide(currentSlide - 1);
     }
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            nextSlide();
+        }, 5000);
+
+        return () => clearInterval(interval);
+    }, [currentSlide]);
 
     const containerBackground = {
         backgroundImage: `url(${dataInicio[currentSlide].photo})`,
