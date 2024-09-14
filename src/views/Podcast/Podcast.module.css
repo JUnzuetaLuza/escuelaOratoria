@@ -68,3 +68,23 @@ iframe {
         font-size: 4rem;
     }
 }
+
+@media (max-width: 720px) {
+    .firstModule {
+        align-items: center;
+        justify-content: center;
+    }
+    .firstRight {
+        position: absolute;
+        margin: 5rem;
+        padding: 2rem;
+        background-color: rgba(0,0,0,0.7);
+    }
+    .photo {
+        opacity: 0.2;
+    }
+    .secondModule {
+        height: 60vh;
+        margin: 0;
+    }
+}
