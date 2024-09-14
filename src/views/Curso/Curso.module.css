@@ -56,3 +56,24 @@
         font-size: 4rem;
     }
 }
+
+@media (max-width: 720px) {
+    .firstModule {
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    .firstRight {
+        position: absolute;
+        margin: 5rem;
+        padding: 2rem;
+        background-color: rgba(0,0,0,0.7);
+        z-index: 1;
+    }
+    .photo {
+        height: 60vh;
+        opacity: 0.2;
+        overflow: hidden;
+    }
+}
