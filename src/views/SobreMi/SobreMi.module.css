@@ -86,3 +86,23 @@
         margin-bottom: 18vh;
     }
 }
+
+@media (max-width: 720px) {
+    .firstModule {
+        align-items: center;
+        justify-content: center;
+    }
+    .firstRight {
+        position: absolute;
+        margin: 5rem;
+        padding: 2rem;
+        background-color: rgba(0,0,0,0.7);
+    }
+    .photo {
+        opacity: 0.2;
+    }
+    .secondModule {
+        margin-bottom: 0;
+        height: 60vh;
+    }
+}
