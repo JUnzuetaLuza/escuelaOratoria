@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 export const Carousel = () => {
 
     const [currentSlide, setCurrentSlide] = useState(0);
+    const [isMobile, setIsMobile] = useState(false)
 
     const showSlide = (index) => {
         if(index >= dataInicio.length){
@@ -23,6 +24,23 @@ export const Carousel = () => {
     const prevSlide = () => {
         showSlide(currentSlide - 1);
     }
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth <= 768) { 
+                setIsMobile(true);
+            } else {
+                setIsMobile(false);
+            }
+        };
+
+        handleResize();
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -52,7 +70,7 @@ export const Carousel = () => {
                 {dataInicio.map((slide, index) => (
                     <div className={css.carouselItem} key={index}>
                         <img src={slide.photo} alt={`Imagen ${index + 1}`} />
-                        <div className={css.card} style={{left: `${(currentSlide % 2) * 25 + 25}%`}}>
+                        <div className={css.card} style={{left: isMobile ? 'auto' : `${(currentSlide % 2) * 25 + 25}%`}}>
                             <h2 className={css.titleCard}>{slide.title}</h2>
                             <p className={css.contentCard}>{slide.description}</p>
                             <Link to={`/${slide.link}`} className={css.buttonCard}>Conoce más</Link>

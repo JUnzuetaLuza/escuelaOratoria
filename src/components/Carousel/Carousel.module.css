@@ -4,6 +4,7 @@
     width: 100%;
     color: white;
     margin-top: 2vh;
+    overflow: hidden;
 }
 
 .carouselInner {
@@ -58,6 +59,7 @@
     font-size: 1.5rem;
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 1rem;
+    transition: left 1s;
     z-index: 10;
 }
 .titleCard, .buttonCard {
@@ -73,7 +75,6 @@
 .buttonCard {
     border-radius: 8px;
     padding: 0.6em 1.2em;
-    font-size: 1em;
     font-weight: 500;
     font-family: inherit;
     color: white;
@@ -93,5 +94,22 @@
     }
     .titleCard{
         font-size: 2rem;
+    }
+}
+
+@media (max-width: 720px) {
+    .carouselItem img {
+        width: 100%;
+        height: 88vh;
+        object-fit: cover;
+    }
+    .card {
+        width: 75%;
+        height: 40%;
+        font-size: 1.5rem;
+        left: 0;
+    }
+    .titleCard{
+        font-size: 3rem;
     }
 }
